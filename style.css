@@ -1,0 +1,187 @@
+/* body css */
+body {
+    height: 100vh;
+    margin: 0;
+    background-image: url(Img/Background\ img.jpg);
+    min-width: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Header Css */
+nav {
+    background-color: #000000;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 0 4px 6px rgba(3, 174, 114, 0.448);
+}
+
+nav ul {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 255, 225);
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #067b52;
+    transform: scale(1.1);
+}
+
+.topic {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #fff;
+    font-size: 4.5rem;
+}
+
+.slogan {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: medium;
+}
+
+.description {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.Pathseekers {
+    background-color: rgba(30, 31, 32, 0.5);
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 10%
+}
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #067b52;
+    /* Button color */
+    color: #fff;
+    /* Text color */
+    border: none;
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 45%;
+    margin-bottom: 5%;
+
+}
+
+button:hover {
+    background-color: #045a3f;
+    /* Change color on hover */
+}
+
+.footer {
+    background-color: #111111;
+    /* Dark background for footer */
+    color: white;
+    /* White text */
+    text-align: center;
+    /* Center-align text */
+    padding: 20px 0;
+    /* Padding around the content */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section1{
+    margin-top: 10%;
+}
+
+.section2{
+    margin-top: 10%;
+    background-color: #111111;
+}
+/* Career Path Section */
+.Careerpath {
+    display: flex;                /* Align text and video in one row */
+    justify-content: space-between;/* Distribute space between text and video */
+    align-items: center;          /* Vertically align text and video */
+    padding: 50px;
+}
+
+/* Text Section */
+.topic1 {
+    color: #fff;
+    flex: 1;                        /* Allow text container to take available space */
+    padding-right: 50px;            /* Space between text and video */
+}
+
+.topic1 h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.topic1 .details1 {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #a8a6a6;
+}
+
+/* Video Container */
+.video-container {
+    flex: 1;                        /* Allow video container to take available space */
+    display: flex;
+    justify-content: flex-end;      /* Align video to the right */
+   
+}
+
+.v1 {
+    width: 40%;                     /* Set video width */
+    height: auto;                   /* Maintain aspect ratio */
+    border-radius: 10%;
+}
