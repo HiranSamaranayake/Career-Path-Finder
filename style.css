@@ -1,5 +1,42 @@
 /* body css */
-body {
+/* Style for the background video section */
+.background-video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the container without distorting aspect ratio */
+    z-index: -1; /* Places the video behind the content */
+}
+
+/* Content on top of the background video */
+.content {
+    position: relative;
+    z-index: 1; /* Ensures the content stays on top of the video */
+    text-align: center;
+    color: rgb(23, 23, 23); /* White text for contrast */
+    padding: 20px;
+}
+
+/* Optional: Text and heading styles */
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+
+/* body {
     height: 100vh;
     margin: 0;
     background-image: url(Img/Background\ img.jpg);
@@ -7,7 +44,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
+} */
 
 /* Header Css */
 nav {
@@ -85,7 +122,7 @@ nav ul li a:hover {
     font-style: normal;
     text-align: center;
     color: #fff;
-    font-size: 4.5rem;
+    font-size:4.rem;
 }
 
 .slogan {
@@ -103,6 +140,7 @@ nav ul li a:hover {
     color: #fff;
     margin-left: 30%;
     margin-right: 30%;
+    font-size: small;
 }
 
 .Pathseekers {
@@ -178,7 +216,7 @@ button:hover {
 .topic1 p {
     font-size: 1rem;
     margin-bottom: 20px;
-    margin-left: 20vh;
+    margin-left: 20vh; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -258,7 +296,7 @@ button:hover {
     margin-bottom: 10px;
     margin-right: 20vh;
     font-size: 3rem; 
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .topic2 p {
@@ -783,3 +821,4 @@ footer ul li a {
     width: 40px;
     height: 40px;
 }
+
