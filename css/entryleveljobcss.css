@@ -1,0 +1,205 @@
+body{
+    color: #000;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+
+/* navigation bar css begin */
+
+nav {
+    background-color: rgba(145, 142, 136, 0.2); /* Initial background with opacity */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 0 4px 6px rgba(209, 188, 104, 0.448);
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+nav:hover {
+    background-color: rgba(235, 180, 71, 0.7); /* Change background on hover */
+    transform: translateY(-5px); /* Move nav up a little on hover */
+    box-shadow: 0 8px 12px rgba(174, 160, 3, 0.6); /* Increase shadow for effect */
+}
+
+nav:active {
+    animation: pulse 0.5s ease-out; /* Pulse effect on click */
+}
+nav ul {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(212, 212, 212);
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #067b52;
+    transform: scale(1.1);
+}
+
+/*     navigation bar css end       */
+a {
+    text-decoration: none;
+    color: #100842;
+}
+a:hover{
+    text-decoration: underline;
+}
+.pagehead{
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    background-color: rgba(241, 241, 241, 0.5);
+    border-radius:10px;
+    text-align: center;
+    color: aliceblue;
+}
+.pagehead h2 {
+    font-size:xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+    text-shadow: 2px 4px 5px rgba(78, 77, 77, 0.427);
+    text-align: center;
+    color: aliceblue;
+}
+.pagehead p{
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: x-large;
+    padding-bottom: 5px;
+}
+.waystojob{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgba(133, 151, 166, 0.5);
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+.waystojob li{
+    font-weight: bold;
+    font-size: x-large;
+}
+.waystojob dd{
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+.jobsits {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+.jobsitstitle {
+    font-size: 20px;
+} 
+.jobsitslist {
+    margin-top: 20px;
+}   
+.jobsitslist li{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.linkedin {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-top: 50px;
+    font-size: 20px;
+    background-color: rgba(133, 151, 166, 0.5);
+    border-radius: 10px;
+}
+.linkedin p {
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+.examplejobs{
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    background-color: rgba(133, 151, 166, 0.5);
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    border-radius:10px;
+}
+.examplejobhead{
+    font-size:x-large;
+
+}
+.examplejobs ol{
+    font-size:x-large;
+    
+}
+.jobdetails {
+    font-size:large;
+}
+.jobdetails li {
+    padding-top: 5px;
+}
+.qulificationslist {
+    width: 75%;
+    margin-left:50px ;
+    
+}
+.experiencelist {
+    width: 40%;
+    margin-left: 90px;
+}
+.examplejobs p{
+    font-size:large;
+}
+footer {
+    background-color: #070d36;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+@media screen and (max-width: 498px) {
+    nav {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;  /* Stack the navbar items vertically */
+        align-items: center;  /* Center align the navbar items */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 8px 0;  /* Space between navbar items */
+    }
+
+    nav ul li a {
+        font-size: 16px;  /* Increase font size for better readability */
+        width: 100%;  /* Make each link take the full width */
+        text-align: center;  /* Center the text inside the link */
+        padding: 12px;  /* Add padding for easy clicking */
+    }
+}

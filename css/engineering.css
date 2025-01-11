@@ -1,0 +1,168 @@
+body {
+    color: #000;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.pagetitle {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgba(0, 128, 28, 0);
+}
+.pagetitle h2{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(201, 171, 225);
+    margin-bottom: 10px;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+.discription {
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+.discription p{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+
+}
+.digreeunies {
+    padding-left: 15%;
+    padding-right: 10%;
+    font-size: 25px;
+
+}
+.digreeunies a {
+    text-decoration: none;
+}
+
+
+/*all the degree and discription css*/
+
+.degreelist {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+
+}
+.degreelist li{
+    font-size: medium;
+    list-style-type: square;
+}
+.degreelist dd{
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+   
+}
+
+/*1st uni and digree list*/
+
+
+.titleandpicuter{
+    display: flex;
+    height: 100px;
+    
+}
+.slitimg {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.slitimg img {
+    width: auto;
+    height: 100%;
+   
+}
+.slit{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    padding-left: 20px;
+}
+
+.slit a{
+    color: rgb(255, 119, 0);
+    
+}
+
+/*2nd uni and degree list*/
+
+
+ .titleandpicuterfour {
+    display: flex;
+    height: 100px;
+}
+.nsbmimg {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.nsbmimg img{
+    width: auto;
+    height: 100%;
+}
+.nsbm {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    padding-left: 20px;
+}
+.nsbm a{
+    color: rgb(22, 7, 151);
+}
+nav {
+    background-color: rgba(145, 142, 136, 0.2); /* Initial background with opacity */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 0 4px 6px rgba(209, 188, 104, 0.448);
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+nav:hover {
+    background-color: rgba(235, 180, 71, 0.7); /* Change background on hover */
+    transform: translateY(-5px); /* Move nav up a little on hover */
+    box-shadow: 0 8px 12px rgba(174, 160, 3, 0.6); /* Increase shadow for effect */
+}
+
+nav:active {
+    animation: pulse 0.5s ease-out; /* Pulse effect on click */
+}
+nav ul {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 20px;
+    padding-top: 10px;
+}
+
+nav ul li a {
+    color: rgb(208, 208, 208);
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #067b52;
+    transform: scale(1.1);
+}
+

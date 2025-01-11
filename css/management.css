@@ -1,0 +1,191 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+.pagetitle {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgba(0, 128, 28, 0);
+}
+.pagetitle h2{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(171, 171, 225);
+    margin-bottom: 10px;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+.discription {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: yellow;
+
+}
+.discription p{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+
+}
+.digreeunies {
+    padding-left: 15%;
+    padding-right: 10%;
+    font-size: 25px;
+
+    background-color: rgb(255, 255, 255);
+}
+.digreeunies a {
+    text-decoration: none;
+}
+
+
+/*all the degree and discription css*/
+
+.degreelist {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+
+}
+.degreelist li{
+    font-size: medium;
+    list-style-type: square;
+}
+.degreelist dd{
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+   
+}
+
+/*1st uni and digree list*/
+
+
+.titleandpicuter{
+    display: flex;
+    height: 100px;
+    
+}
+.slitimg {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.slitimg img {
+    width: auto;
+    height: 100%;
+   
+}
+.slit{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    padding-left: 20px;
+}
+
+.slit a{
+    color: rgb(255, 119, 0);
+    
+}
+
+/*2nd uni and degree list*/
+
+.titleandpicutertwo {
+    display: flex;
+    height: 100px;
+}
+.iitimg {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.iitimg img {
+    width: auto;
+    height: 100%;
+}
+.iit {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    padding-left: 20px;
+}
+.iit a{
+    color: black;
+}
+
+
+ /*3rd uni and dgrees*/
+
+
+ .titleandpicuterfour {
+    display: flex;
+    height: 100px;
+}
+.nsbmimg {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.nsbmimg img{
+    width: auto;
+    height: 100%;
+}
+.nsbm {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    padding-left: 20px;
+}
+.nsbm a{
+    color: rgb(22, 7, 151);
+}
+
+/* 4th uni and degree list */
+
+.titleandpicuterthree{
+    display: flex;
+    height: 100px;
+    padding-bottom: 50px;
+
+}
+.apiitimg {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.apiitimg img {
+    width: auto;
+    height: 100%;
+}
+.apiit {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    padding-left: 20px;
+}
+.apiit a{
+    color: black;
+}
+
+@media screen and (max-width: 498px) {
+    nav {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;  /* Stack the navbar items vertically */
+        align-items: center;  /* Center align the navbar items */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 8px 0;  /* Space between navbar items */
+    }
+
+    nav ul li a {
+        font-size: 16px;  /* Increase font size for better readability */
+        width: 100%;  /* Make each link take the full width */
+        text-align: center;  /* Center the text inside the link */
+        padding: 12px;  /* Add padding for easy clicking */
+    }
+}
