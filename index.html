@@ -27,16 +27,153 @@
     </video>
     <section>
         <div>
-    <nav class="header">
-        <ul id="navList">
-            <li><img src="Img/Logo.png" alt="Logo"></li>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="job.html">CAREER PATH FINDER</a></li>
-            <li><a href="degree-finder.html">DEGREE FINDER</a></li>
-            <li><a href="alternative paths.html">RESOURCE</a></li>
-            <li><a href="aboutus.html">ABOUT US</a></li>
-        </ul>
-    </nav>
+            <style>
+                /* Dropdown menu styling */
+            .dropdown-menu {
+                display: none; /* Initially hidden */
+                position: absolute;
+                top: 100%; /* Align just below the parent item */
+                left: 0;
+                background-color: #939393;
+                border-radius: 5px;
+                padding: 0.5em 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                z-index: 10; /* Ensure it appears above other elements */
+                width: max-content; /* Prevents the dropdown from being too narrow */
+            }
+            
+            .dropdown-menu a {
+                display: block;
+                padding: 0.5em 1em;
+                color: white;
+                text-decoration: none;
+                white-space: nowrap; /* Prevent text wrapping */
+            }
+            
+            .dropdown-menu a:hover {
+                background-color: #666;
+            }
+            
+            /* Show the dropdown on hover */
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+            
+            /* Fix potential overflow issues */
+            .header {
+                overflow: visible; /* Ensure dropdown menus are not clipped */
+            }
+            
+            /* Prevent overlap issues */
+            .dropdown-menu {
+                pointer-events: auto; /* Ensures dropdown is interactive */
+            }
+            
+            nav {
+                background-color: rgba(131, 131, 131, 0.2); /* Initial background with opacity */
+                padding: 20px 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border-radius: 15px;
+                margin: 20px auto;
+                width: fit-content;
+                box-shadow: 0 4px 6px rgba(209, 188, 104, 0.448);
+                transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+            }
+            
+            nav:hover {
+                background-color: rgba(235, 180, 71, 0.7); /* Change background on hover */
+                transform: translateY(-5px); /* Move nav up a little on hover */
+                box-shadow: 0 8px 12px rgba(174, 160, 3, 0.6); /* Increase shadow for effect */
+            }
+            
+            nav:active {
+                animation: pulse 0.5s ease-out; /* Pulse effect on click */
+            }
+            nav ul {
+                font-family: "Poppins", serif;
+                font-weight: 100;
+                font-style: normal;
+                list-style-type: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+            nav ul li {
+                margin: 0 20px;
+                padding-top: 10px;
+            }
+            
+            nav ul li a {
+                color: rgb(208, 208, 208);
+                text-decoration: none;
+                padding: 10px 16px;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 6px;
+                transition: background-color 0.3s, transform 0.2s;
+            }
+            
+            nav ul li a:hover {
+                background-color: #067b52;
+                transform: scale(1.1);
+            }
+            /* Basic styling for the navigation */
+            .header {
+                background-color: #d1d0d0;
+                padding: 0.5em 1em;
+            }
+            
+            #navList {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                position: relative; /* Ensure dropdowns are positioned properly */
+            }
+            
+            #navList li {
+                margin: 0 1em;
+                position: relative; /* Required for the dropdown */
+            }
+            
+            #navList a {
+                color: rgb(46, 45, 45);
+                text-decoration: none;
+                padding: 0.5em 1em;
+                display: inline-block;
+            }
+            
+            #navList a:hover {
+                background-color: #085d24;
+                border-radius: 5px;
+            }
+            
+            </style>
+            
+            <!--navigation bar-->
+            
+            <nav class="header">
+                <ul id="navList">
+                    <li><img src="Img/Logo.png" alt="Logo"></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="job.html">CAREER PATH FINDER</a></li>
+                    <li><a href="degree-finder.html">DEGREE FINDER</a></li>
+                    <li class="dropdown">
+                        <a href="alternative paths.html">RESOURCE</a>
+                        <div class="dropdown-menu">
+                            <a href="alternative paths.html">Alternative Paths</a>
+                            <a href="Entryleveljobs.html">Entry Level Jobs</a>
+                            <a href="How to Make a CV.html">CV Make</a>
+                        </div>
+                    </li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+            
 </div>
 
         
