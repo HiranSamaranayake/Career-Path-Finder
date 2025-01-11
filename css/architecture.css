@@ -1,0 +1,188 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Navigation */
+nav {
+    background-color: rgba(145, 142, 136, 0.2); /* Initial background with opacity */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 0 4px 6px rgba(209, 188, 104, 0.448);
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+nav:hover {
+    background-color: rgba(235, 180, 71, 0.7); /* Change background on hover */
+    transform: translateY(-5px); /* Move nav up a little on hover */
+    box-shadow: 0 8px 12px rgba(174, 160, 3, 0.6); /* Increase shadow for effect */
+}
+
+nav:active {
+    animation: pulse 0.5s ease-out; /* Pulse effect on click */
+}
+nav ul {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 20px;
+    padding-top: 10px;
+}
+
+nav ul li a {
+    color: rgb(208, 208, 208);
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #067b52;
+    transform: scale(1.1);
+}
+
+
+/* Page Title */
+.pagetitle {
+    padding: 100px 20px 20px;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+.pagetitle h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.pagetitle hr {
+    width: 50px;
+    margin: 10px auto;
+    border: 2px solid #ecf0f1;
+}
+
+/* Description */
+.discription {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align:center ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Degree Universities */
+.digreeunies {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.titleandpicuter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.slitimg img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.slit h3 a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.slit h3 a:hover {
+    color: #3498db;
+}
+
+/* Degree List */
+.degreelist {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.degreelist li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.degreelist li a {
+    text-decoration: none;
+    color: #2980b9;
+    transition: color 0.3s ease;
+}
+
+.degreelist li a:hover {
+    color: #3498db;
+}
+
+.degreelist dd {
+    margin: 10px 0 20px;
+    padding-left: 20px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navList {
+        flex-direction: column;
+    }
+
+    .titleandpicuter {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slitimg img {
+        margin: 0 auto 10px;
+    }
+}
